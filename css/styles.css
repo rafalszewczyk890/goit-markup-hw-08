@@ -67,6 +67,21 @@
   padding: 6px 22px 6px 22px;
 }
 
+.portfolio-button:hover {
+  background: #2196f3;
+  border-radius: 4px;
+  border: none;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  padding: 6px 22px 6px 22px;
+}
+
+.portfolio-button:hover span {
+  color: #ffffff;
+}
+
 .portfolio-button-list {
   list-style: none;
 }
