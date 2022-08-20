@@ -1,0 +1,37 @@
+.header-logo > span {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+  text-decoration: none;
+}
+
+.header-logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: #000;
+  text-decoration: none;
+}
+
+.header-nav {
+  font-family: "Raleway";
+  font-weight: 500;
+  font-size: 14px;
+  color: #000;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+.decoration-none {
+  list-style: none;
+  text-decoration: none;
+}
+
+.current-site {
+  color: #2196f3;
+}
