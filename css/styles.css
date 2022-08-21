@@ -1,6 +1,6 @@
 body {
   color: #212121;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
 }
 
 .site-logo {
@@ -108,12 +108,12 @@ footer .site-logo {
   display: inline;
 }
 
-.portfolio-button:hover span {
+.portfolio-button:hover {
   color: #ffffff;
 }
 
 
-.portfolio-button:focus span {
+.portfolio-button:focus {
   color: #ffffff;
 }
 
@@ -190,19 +190,15 @@ footer .site-logo {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
+  color: #FFF;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
 }
 
 .main-button:hover {
   cursor: pointer;
-}
-
-.main-button span {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  color: #FFF;
-  letter-spacing: 0.06em;
-  text-align: center;
 }
 
 .description-list {
