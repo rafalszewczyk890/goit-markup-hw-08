@@ -13,6 +13,15 @@ ul {
     padding-inline-start: 0px;
 }
 
+h4 {
+  display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -378,4 +387,19 @@ margin: 0;
 .portfolio-box {
   display: flex;
   justify-content: center;  
+}
+
+.section-nopadding {
+padding-top: 0px;
+}
+
+.item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  flex-basis: calc((100% - 30px) / 3);
+}
+
+.projects-box div {
+  padding: 20px 24px 20px 24px;
 }
