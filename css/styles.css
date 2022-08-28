@@ -18,6 +18,11 @@ body {
 
 /* HEADER */
 
+.header {
+  border-bottom: 1px solid 
+#ECECEC;
+}
+
 .header-box {
   display: flex;
   align-items: center;
@@ -181,10 +186,27 @@ body {
 
 .footer {
   background-color: #2F303A;
+  padding: 60px 0;
+}
+
+.footer-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-box address ul {
+margin: 0;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
 }
 
 .footer-list {
   list-style: none;
+   
 }
 
 .footer-list a {
@@ -198,6 +220,11 @@ body {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   font-style: normal; /* użyte po to, by lista nie była pisana kursywą */
+  margin-bottom: 9px;
+}
+
+.footer-list li:last-child {
+  margin-bottom: 0;
 }
 
 .footer-list .footer-list-city {
@@ -289,30 +316,49 @@ background-color:#2F303A;
   margin: 0;
 }
 
-.main-section-list figure {
+.team-section-list figure {
   background: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   width: 270px;
 }
 
-.main-section-list figcaption {
+.team-section-list figcaption {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: #757575;
+  padding: 30px 0;
 }
 
-.main-section-list div {
+.team-section-list div {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   color:#212121;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 
 .team-background {
   background: #F5F4FA;
+}
+
+.team-section-list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding: 0;
+  justify-content: center;
+  margin: 0;
+}
+
+.team-section-list li figure {
+margin: 0;
+}
+
+.footer-box .site-logo {
+  margin-bottom: 20px;
 }
