@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Studio</title>
+
     <link
       rel="stylesheet"
-      href="https://raw.githubusercontent.com/sindresorhus/modern-normalize/main/modern-normalize.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -25,67 +26,75 @@
   </head>
   <body>
     <header>
-      <a href="index.html" class="site-logo"><span>Web</span>Studio</a>
-      <nav>
-        <ul class="header-list">
-          <li class="header-nav">
-            <a href="index.html"><span class="current-site">Agencja</span></a>
+      <div class="container header-box">
+        <a href="index.html" class="site-logo"><span>Web</span>Studio</a>
+        <nav>
+          <ul class="nav-list">
+            <li class="header-nav">
+              <a href="index.html"><span class="current-site">Agencja</span></a>
+            </li>
+            <li class="header-nav">
+              <a href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="header-nav">
+              <a href="#kontakt">Kontakty</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contact-list">
+          <li>
+            <a href="mailto:info@devstudio.com" class="header-address"
+              >info@devstudio.com</a
+            >
           </li>
-          <li class="header-nav">
-            <a href="portfolio.html">Portfolio</a>
-          </li>
-          <li class="header-nav">
-            <a href="#kontakt">Kontakty</a>
+          <li>
+            <a href="tel:+48111111111" class="header-address">+48111 111 111</a>
           </li>
         </ul>
-      </nav>
-      <ul class="header-list">
-        <li>
-          <a href="mailto:info@devstudio.com" class="header-address"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a href="tel:+48111111111" class="header-address">+48111 111 111</a>
-        </li>
-      </ul>
+      </div>
     </header>
     <main>
-      <div class="main-header-box">
-        <h1 class="main-header">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-        <button type="button" class="main-button">Zamów usługę</button>
-      </div>
+      <section class="background-color-dark">
+        <div class="main-header-box container">
+          <h1 class="main-header">
+            EFEKTYWNE ROZWIĄZANIA <br />DLA WASZEGO BIZNESU
+          </h1>
+          <button type="button" class="main-button">Zamów usługę</button>
+        </div>
+      </section>
       <section>
-        <ul class="description-list">
+        <ul class="description-list container">
           <li>
             <h3><b>LOREM IPSUM</b></h3>
-            <span
-              >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malesuada</span
-            >
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+              arcu sem. Sed non sodales dui. Interdum et malesuada
+            </p>
           </li>
           <li>
             <h3><b>LOREM IPSUM</b></h3>
-            <span
-              >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malesuada</span
-            >
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+              arcu sem. Sed non sodales dui. Interdum et malesuada
+            </p>
           </li>
           <li>
             <h3><b>LOREM IPSUM</b></h3>
-            <span
-              >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malesuada</span
-            >
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+              arcu sem. Sed non sodales dui. Interdum et malesuada
+            </p>
           </li>
           <li>
             <h3><b>LOREM IPSUM</b></h3>
-            <span
-              >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malesuada</span
-            >
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+              arcu sem. Sed non sodales dui. Interdum et malesuada
+            </p>
           </li>
         </ul>
+      </section>
+      <section class="container section main-section zero-top-padding">
         <h2 class="main-section-header">Czym się zajmujemy</h2>
         <ul class="main-section-list">
           <li>

@@ -3,6 +3,28 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 94px 0;
+}
+
+.zero-top-padding {
+  padding: 0 0 94px 0;
+}
+
+/* HEADER */
+
+.header-box {
+  display: flex;
+  align-items: center;
+  padding: 24px 0;
+  justify-content: space-between;
+}
+
 .site-logo {
   font-family: "Raleway";
   font-weight: 700;
@@ -48,8 +70,17 @@ body {
   color: #2196f3;
 }
 
-.header-list {
+.nav-list {
   list-style: none;
+  display: flex;
+  gap: 46px;
+}
+
+.contact-list {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  margin-left: 371px;
 }
 
 .header-address {
@@ -68,6 +99,8 @@ body {
 .header-address:focus {
   color:#2196f3;
 }
+
+/* MAIN */
 
 .portfolio-button {
   background: #f5f4fa;
@@ -172,7 +205,16 @@ body {
 }
 
 .main-header-box {
-  background-color:#2F303A;
+  
+  display: flex;
+  flex-direction: column;
+  padding: 200px;
+  align-items: center;
+  gap: 30px;
+}
+
+.background-color-dark {
+background-color:#2F303A;
 }
 
 .main-header {
@@ -183,6 +225,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #FFF;
+  margin: 0;
 }
 
 .main-button {
@@ -195,6 +238,7 @@ body {
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.06em;
+  padding: 10px 41px 10px 42px;
 }
 
 .main-button:hover {
@@ -203,6 +247,11 @@ body {
 
 .description-list {
   list-style: none;
+  display: flex;
+  padding: 94px 0px;
+  gap: 30px;
+  justify-content: space-evenly;
+
 }
 
 .description-list li h3 {
@@ -211,9 +260,10 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin: 0 0 10px 0;
 }
 
-.description-list li span {
+.description-list li p {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -227,10 +277,16 @@ body {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  margin: 0 0 50px 0;
 }
 
 .main-section-list {
   list-style: none;
+  display: flex;
+  gap: 30px;
+  padding: 0;
+  justify-content: space-between;
+  margin: 0;
 }
 
 .main-section-list figure {
