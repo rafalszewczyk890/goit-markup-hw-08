@@ -401,4 +401,11 @@ h4 {
 }
 
 .icon-envelope {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.icon-smartphone {
+  margin-right: 10px;
+  fill: currentColor;
 }
