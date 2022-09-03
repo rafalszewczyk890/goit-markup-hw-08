@@ -257,6 +257,17 @@ h4 {
   gap: 30px;
 }
 
+.background-image {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(83, 83, 83, 0.466),
+      rgba(68, 68, 68, 0.404)
+    ),
+    url("../images/header-background.jpg");
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
 .background-color-dark {
   background-color: #2f303a;
 }
