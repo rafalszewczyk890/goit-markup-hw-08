@@ -21,6 +21,16 @@ h4 {
   margin-inline-end: 0px;
 }
 
+h2 {
+  display: block;
+
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -373,7 +383,7 @@ h4 {
   letter-spacing: 0.03em;
   color: #757575;
   padding: 30px 0;
-  padding-bottom: 16px;
+  padding-bottom: 0px;
 }
 
 .team-section-list div {
@@ -405,17 +415,27 @@ h4 {
 
 .icon-team {
   fill: #afb1b8;
-  margin-bottom: 18px;
+  margin-bottom: 30px;
+  margin-top: 28px;
   width: 44px;
   height: 44px;
-  padding: 12px;
+}
+
+.icon-team:not(:last-child) {
+  margin-right: 10px;
 }
 
 .icon-team:hover {
   fill: #ffffff;
   background: #2196f3;
   border-radius: 50%;
-  padding: 0px;
+  cursor: pointer;
+}
+
+.icon-team:focus {
+  fill: #ffffff;
+  background: #2196f3;
+  border-radius: 50%;
 }
 
 .footer-box .site-logo {
@@ -450,4 +470,39 @@ h4 {
 .icon-smartphone {
   margin-right: 10px;
   fill: currentColor;
+}
+
+.our-clients {
+  background-color: #ffffff;
+}
+
+.client-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.icon-client {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  padding: 17px 32px 14px 32px;
+  fill: #afb1b8;
+}
+
+.icon-client:hover {
+  fill: #2196f3;
+  border: 1px solid #2196f3;
+  cursor: pointer;
+}
+
+.our-clients h2 {
+  margin-bottom: 50px;
+}
+
+.footer-social {
+  text-transform: uppercase;
 }
