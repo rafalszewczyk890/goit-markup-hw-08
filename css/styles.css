@@ -82,6 +82,19 @@ h2 {
   position: relative;
 }
 
+.header-nav.current::after {
+  position: absolute;
+  background-color: #2196f3;
+  bottom: 0;
+  height: 4px;
+  z-index: 20;
+  width: 100%;
+  border-radius: 2px;
+  bottom: -33px;
+  content: "";
+  right: 0px;
+}
+
 .header-nav a {
   color: #212121;
   text-decoration: none;
