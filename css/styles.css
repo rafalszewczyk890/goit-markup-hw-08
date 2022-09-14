@@ -708,3 +708,69 @@ h2 {
   width: 30px;
   cursor: pointer;
 }
+
+.newsletter-form {
+  display: flex;
+  margin-left: 78px;
+  margin-top: 10px;
+}
+
+.newsletter-label {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+
+.newsletter-form-button {
+width: 200px;
+height: 50px;
+background: #2196F3;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 30px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+color: #FFFFFF;
+border: none;
+justify-content: center;
+align-items: center;
+}
+
+.newsletter-form-button svg {
+  fill: white;
+  margin-left: 24px;
+}
+
+.footer-form {
+  display:flex;
+  
+}
+
+.newsletter-input{
+  border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+width: 358px;
+height: 50px;
+background-color: transparent;
+ margin-right: 12px;
+ padding: 15px;
+ color: white;
+}
+
+.input-button-div {
+  display:flex;
+  margin-top: 20px;
+}
+
