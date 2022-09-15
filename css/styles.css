@@ -32,6 +32,7 @@ h2 {
 }
 
 
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -803,6 +804,7 @@ margin-bottom: 12px;
 }
 
 .modal-label {
+
  font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
@@ -811,6 +813,24 @@ line-height: 14px;
 letter-spacing: 0.01em;
 color: #757575;
 position: relative;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.modal-label span {
+ font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+letter-spacing: 0.01em;
+color: #757575;
+position: relative;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+margin-bottom: 4px;
+display: flex;
 }
 
 .modal-icon {
@@ -839,6 +859,13 @@ align-items: center;
 border-radius: 4px;
 margin-bottom: 10px;
 padding-left: 42px;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input:focus {
+  border:rgba(33, 150, 243, 0.9) 1px solid;
+  outline: 0px;
 }
 
 .modal-form textarea {
@@ -854,11 +881,15 @@ font-weight: 400;
 font-size: 12px;
 line-height: 14px;
 letter-spacing: 0.01em;
-margin-bottom: 20px;
+margin-bottom: 10px;
 }
 
-.modal-input:active {
-border: 1px solid #2196F3;
+.modal-form textarea:focus {
+  border:#2196F3 1px solid;
+}
+
+.modal-label:focus-within {
+  fill:#2196F3;
 }
 
 .modal-form textarea::placeholder {
@@ -902,7 +933,7 @@ border: 1px solid #2196F3;
   background:#2196F3;
   width: 16px;
   height: 15px;
-  background-image: url("../images/Vector.svg");
+  background-image: url("../images/tick.svg");
   background-position: contain;
   background-repeat: no-repeat;
   z-index: 20;
@@ -922,5 +953,6 @@ height: 50px;
 color: white;
 border: none;
 align-self: center;
-margin-top: 20px;
+margin-top: 30px;
 }
+

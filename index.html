@@ -34,18 +34,22 @@
       <div class="modal-form">
           <span>Zostaw swoje dane w formularzu poniżej</span>
         <form>
-          <label class="modal-label" for="first-name">Imię<svg class="modal-icon" width="12px" height="12px">
-            <use href="./images/icons.svg#modal-form-person"></use></svg></label>
-          
-          <input class="modal-input" type="text" name="first-name" id="first-name"/>
-          <label class="modal-label" for="phone">Telefon<svg class="modal-icon" width="12px" height="12px">
+          <label class="modal-label" for="first-name"><span>Imię</span>
+            <input class="modal-input" type="text" name="first-name" id="first-name" />
+            <svg class="modal-icon" width="12px" height="12px">
+            <use  href="./images/icons.svg#modal-form-person"></use>
+          </svg>
+        </label>
+      
+          <label class="modal-label" for="phone"><span>Telefon</span><input class="modal-input" type="tel" name="phone" id="phone"/><svg class="modal-icon" width="12px" height="12px">
             <use href="./images/icons.svg#modal-form-phone"></use></svg></label>
-          <input class="modal-input" type="tel" name="phone" id="phone"/>
-          <label class="modal-label" for="email">Email<svg class="modal-icon" width="12px" height="12px">
+          
+          <label class="modal-label" for="email"><span>Email</span><input class="modal-input" type="email" name="email" id="email"/><svg class="modal-icon" width="12px" height="12px">
             <use href="./images/icons.svg#modal-form-email"></use></svg></label>
-          <input class="modal-input" type="email" name="email" id="email"/>
-          <label class="modal-label" for="comment">Komentarz</label>
-          <textarea name="comment" id="comment" placeholder="Wprowadź tekst"></textarea>
+          
+          <label class="modal-label" for="comment"><span>Komentarz</span>
+          <textarea class="modal-input" name="comment" id="comment" placeholder="Wprowadź tekst"></textarea></label>
+          
           <input class="tick-box" type="checkbox" name="agree-check" value="agree" id="modal-agree-label"/>
           <label class="tick-box-label" for="modal-agree-label">
           Oświadczam iż akceptuję&nbsp<a>Regulamin</a>&nbspi&nbsp<a>Politykę Prywatności</a>.
