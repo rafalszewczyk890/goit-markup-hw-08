@@ -921,7 +921,7 @@ margin-bottom: 10px;
   z-index: 20;
   border-radius: 2px;
   left: -24px;
-  top: 50%;
+  top: 11px;
   transform: translateY(-50%);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
