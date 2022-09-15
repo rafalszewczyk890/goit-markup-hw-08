@@ -31,6 +31,7 @@ h2 {
   font-weight: bold;
 }
 
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -743,6 +744,7 @@ color: #FFFFFF;
 border: none;
 justify-content: center;
 align-items: center;
+cursor: pointer;
 }
 
 .newsletter-form-button svg {
@@ -864,17 +866,51 @@ border: 1px solid #2196F3;
 }
 
 .tick-box {
-  margin-right: 8px;
-  border: 2px;
-  border-color: #212121;
-  width: 16px;
-  height: 15px;
+  appearance: none;
 }
 
-.modal-agree-label a {
+.tick-box-label {
+  cursor: pointer;
+  position: relative;
+  align-self: center;
+  color: #757575;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  margin-left: 24px;
+  
+}
+
+.tick-box-label::before {
+  position: absolute;
+  border: #212121 2px solid;
+  width: 16px;
+  height: 15px;
+  content: '';
+  z-index: 20;
+  border-radius: 2px;
+  left: -24px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tick-box:checked + .tick-box-label::before {
+  position: absolute;
+  border:rgba(33, 150, 243, 0.9) 2px solid;
+  background:#2196F3;
+  width: 16px;
+  height: 15px;
+  background-image: url("../images/Vector.svg");
+  background-position: contain;
+  background-repeat: no-repeat;
+  z-index: 20;
+}
+
+.tick-box-label a {
 color: #2196F3;
 text-decoration: underline;
-
 }
 
 .modal-submit {
