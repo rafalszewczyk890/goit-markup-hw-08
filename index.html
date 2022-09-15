@@ -31,29 +31,31 @@
                 <use href="./images/icons.svg#icon-close"></use>
               </svg>
             </button>
-        <div class="modal-form">
+      <div class="modal-form">
           <span>Zostaw swoje dane w formularzu poniżej</span>
-       <form>
-        <label class="modal-label" for="first-name">Imię</label>
-        <input class="modal-input" type="text" name="first-name" id="first-name"/>
-        <label class="modal-label" for="phone">Telefon</label>
-        <input class="modal-input" type="tel" name="phone" id="phone"/>
-        <label class="modal-label" for="email">Email</label>
-        <input class="modal-input" type="email" name="email" id="email"/>
-        <label class="modal-label" for="comment">Komentarz</label>
-        <textarea name="comment" id="comment" placeholder="Wprowadź tekst"></textarea>
-        
-        <label class="modal-agree-label">
+        <form>
+          <label class="modal-label" for="first-name">Imię<svg class="modal-icon" width="12px" height="12px">
+            <use href="./images/icons.svg#modal-form-person"></use></svg></label>
+          
+          <input class="modal-input" type="text" name="first-name" id="first-name"/>
+          <label class="modal-label" for="phone">Telefon<svg class="modal-icon" width="12px" height="12px">
+            <use href="./images/icons.svg#modal-form-phone"></use></svg></label>
+          <input class="modal-input" type="tel" name="phone" id="phone"/>
+          <label class="modal-label" for="email">Email<svg class="modal-icon" width="12px" height="12px">
+            <use href="./images/icons.svg#modal-form-email"></use></svg></label>
+          <input class="modal-input" type="email" name="email" id="email"/>
+          <label class="modal-label" for="comment">Komentarz</label>
+          <textarea name="comment" id="comment" placeholder="Wprowadź tekst"></textarea>
+          <label class="modal-agree-label">
           <input class="tick-box" type="checkbox" name="agree-check" value="agree"/>Oświadczam iż akceptuję&nbsp<a>Regulamin</a>&nbspi&nbsp<a>Politykę Prywatności</a>.
-        </label>
-       <button class="modal-submit" type="submit">
-        Wyślij
-       </button>
-      </form>
-
-        </div>
-        </div>
+          </label>
+          <button class="modal-submit" type="submit">
+            Wyślij
+          </button>
+        </form>
+      </div>
     </div>
+  </div>
    
   <body>
     <header class="header">
