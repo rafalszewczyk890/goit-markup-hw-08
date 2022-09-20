@@ -31,7 +31,9 @@ h2 {
   font-weight: bold;
 }
 
-
+a {
+  text-decoration: none;
+}
 
 .container {
   width: 1200px;
