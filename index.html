@@ -300,10 +300,10 @@
           </li>
         </ul>
       </section>
-      <section class="our-clients section">
+      <section class="clients section">
         <div class="container">
         <h2 class="clients__header">Nasi klienci</h2>
-        <ul class="client-list">
+        <ul class="client__list">
           <li>
             <svg class="icon-client">
                 <use href="./images/icons.svg#icon-company-logo1"></use></svg
@@ -329,23 +329,23 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <div class="footer-box2">
-          <div class="footer-box">
+        <div class="footer__flexbox">
+          <div class="footer__nav">
             <a href="index.html" class="logo logo__footer"><span class="logo--accent">Web</span>Studio</a>
             <address>
-              <ul class="footer-list">
-                <li class="footer-list-city">
+              <ul class="footer__list">
+                <li class="footer__item footer__item--city">
                   m. Warszawa, Aleje Jerozolimskie 21
                 </li>
-                <li><a href="mailto:info@example.com">info@example.com</a></li>
-                <li><a href="tel:+48 111 111 111">+48 111 111 111</a></li>
+                <li class="footer__item"><a class="footer__text" href="mailto:info@example.com">info@example.com</a></li>
+                <li class="footer__item"><a class="footer__text" href="tel:+48 111 111 111">+48 111 111 111</a></li>
               </ul>
             </address>
           </div>
-          <div class="footer-join">
-            <span class="footer-join-text">Dołącz do nas</span>
-            <div class="footer-icons">
-              <svg class="icon-footer">
+          <div class="join-us">
+            <span class="join-us__header">Dołącz do nas</span>
+            <div class="join-us__icons">
+              <svg class="join-us__icon">
                 <use
                   href="./images/icons.svg#icon-instagram-2"
                   width="36px"
@@ -353,7 +353,7 @@
                   x="4"
                   y="12"
                 ></use></svg
-              ><svg class="icon-footer">
+              ><svg class="join-us__icon">
                 <use
                   href="./images/icons.svg#icon-twitter-1"
                   width="36px"
@@ -361,7 +361,7 @@
                   x="4"
                   y="12"
                 ></use></svg
-              ><svg class="icon-footer">
+              ><svg class="join-us__icon">
                 <use
                   href="./images/icons.svg#icon-facebook-1"
                   width="36px"
@@ -369,7 +369,7 @@
                   x="4"
                   y="12"
                 ></use></svg
-              ><svg class="icon-footer">
+              ><svg class="join-us__icon">
                 <use
                   href="./images/icons.svg#icon-linkedin-1"
                   width="36px"
@@ -382,20 +382,20 @@
           </div>
           <div class="newsletter-form">
             <form name="newsletter-form">
-              <label class="newsletter-label" for="newsletter-input"
+              <label class="newsletter-form__header" for="newsletter-input"
                 >Zapisz się do newslettera</label
               >
-              <div class="input-button-div">
+              <div class="newsletter-form__flex">
                 <input
                   placeholder="E-mail"
-                  class="newsletter-input"
+                  class="newsletter-form__input"
                   id="newsletter-input"
                   type="email"
                   name="email"
                 />
-                <button class="newsletter-form-button" type="submit">
+                <button class="newsletter-form__button" type="submit">
                   Zapisz się
-                  <svg width="24px" height="24px">
+                  <svg class="newsletter-form__icon" width="24px" height="24px">
                     <use href="./images/icons.svg#icon-icon-send"></use>
                   </svg>
                 </button>
