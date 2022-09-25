@@ -1,0 +1,38 @@
+.blurbs-list {
+  list-style: none;
+  display: flex;
+  padding: 94px 0px;
+  gap: 30px;
+  justify-content: space-evenly;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__header {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+  }
+}
+.icon-container {
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  display: flex;
+  padding: 25px 102px 25px 102px;
+}

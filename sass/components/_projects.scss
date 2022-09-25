@@ -1,0 +1,90 @@
+.projects__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  flex-basis: calc((100% - 30px) / 3);
+}
+
+.projects-card {
+  border: 1px solid #eeeeee;
+  width: 370px;
+  height: 404px;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    color: #212121;
+  }
+
+  &__name {
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: #757575;
+    margin: 0;
+  }
+
+  &__container {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__overlay {
+    width: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+    height: 101%;
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 250ms ease;
+    transform: translateY(100%);
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    padding: 49px 45px 49px 24px;
+  }
+
+  &:hover &__overlay {
+    transform: translateY(0);
+  }
+
+  &:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+  }
+
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+  }
+  &__description {
+    padding: 20px 24px 20px 24px;
+  }
+}
+
+.section-nopadding {
+  padding-top: 0px;
+}
+
+.icon-envelope {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.icon-smartphone {
+  margin-right: 10px;
+  fill: currentColor;
+}

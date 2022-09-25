@@ -1,0 +1,50 @@
+.navigation__text {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  color: #212121;
+  text-decoration: none;
+
+  &--current {
+    color: #2196f3;
+  }
+
+  &:hover {
+    color: #2196f3;
+    text-decoration: none;
+  }
+
+  &:focus {
+    color: #2196f3;
+    text-decoration: none;
+  }
+}
+
+.navigation {
+  list-style: none;
+  display: flex;
+  gap: 46px;
+  height: 80px;
+  align-items: center;
+
+  &__button {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    position: relative;
+
+    &--current::after {
+      position: absolute;
+      background-color: #2196f3;
+      bottom: 0;
+      height: 4px;
+      z-index: 10;
+      width: 100%;
+      border-radius: 2px;
+      bottom: -33px;
+      content: "";
+      right: 0px;
+    }
+  }
+}

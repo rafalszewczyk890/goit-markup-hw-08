@@ -1,0 +1,39 @@
+.clients {
+  background-color: #ffffff;
+
+  &__header {
+    margin-bottom: 50px;
+  }
+}
+
+.client__list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.icon-client {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  padding: 21px 57px 21px 57px;
+  fill: #afb1b8;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    fill: #2196f3;
+    border: 1px solid #2196f3;
+    cursor: pointer;
+  }
+
+  &:focus {
+    fill: #2196f3;
+    border: 1px solid #2196f3;
+    cursor: pointer;
+  }
+}
