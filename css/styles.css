@@ -646,23 +646,7 @@ a {
   flex-basis: calc((100% - 30px) / 3);
 }
 
-.projects__title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 36px;
-  letter-spacing: 0.06em;
-  color: #212121;
-}
-
-.projects-name {
-  font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 0.03em;
-  color: #757575;
-  margin: 0;
-}
-
-.projects__box {
+.projects-card {
   border: 1px solid #eeeeee;
   width: 370px;
   height: 404px;
@@ -671,12 +655,28 @@ a {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.projects-img-container {
+.projects-card__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+
+.projects-card__name {
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin: 0;
+}
+
+.projects-card__container {
   position: relative;
   overflow: hidden;
 }
 
-.projects-overlay {
+.projects-card__overlay {
   width: 100%;
   background-color: rgba(33, 150, 243, 0.9);
   height: 101%;
@@ -696,17 +696,17 @@ a {
   padding: 49px 45px 49px 24px;
 }
 
-.projects__box:hover .projects-overlay {
+.projects-card:hover .projects-card__overlay {
   transform: translateY(0);
 }
 
-.projects__box:hover {
+.projects-card:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
 }
 
-.projects__box:focus {
+.projects-card:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
@@ -716,7 +716,7 @@ a {
   padding-top: 0px;
 }
 
-.projects-description {
+.projects-card__description {
   padding: 20px 24px 20px 24px;
 }
 
@@ -729,6 +729,8 @@ a {
   margin-right: 10px;
   fill: currentColor;
 }
+
+/* MODAL WINDOW */
 
 .backdrop {
   position: fixed;
