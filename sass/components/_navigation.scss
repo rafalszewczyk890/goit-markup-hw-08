@@ -2,20 +2,20 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  color: #212121;
+  color: $dark-border;
   text-decoration: none;
 
   &--current {
-    color: #2196f3;
+    color: $blue-accent;
   }
 
   &:hover {
-    color: #2196f3;
+    color: $blue-accent;
     text-decoration: none;
   }
 
   &:focus {
-    color: #2196f3;
+    color: $blue-accent;
     text-decoration: none;
   }
 }
@@ -36,7 +36,7 @@
 
     &--current::after {
       position: absolute;
-      background-color: #2196f3;
+      background-color: $blue-accent;
       bottom: 0;
       height: 4px;
       z-index: 10;

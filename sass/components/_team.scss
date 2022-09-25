@@ -1,5 +1,5 @@
 .team {
-  background: #f5f4fa;
+  background: $beige-background;
 
   &__photo {
     background: #ffffff;
@@ -15,7 +15,7 @@
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: $grey-accent;
     padding: 30px 0;
     padding-bottom: 0px;
   }
@@ -24,7 +24,7 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
-    color: #212121;
+    color: $dark-border;
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 10px;
@@ -62,14 +62,14 @@
 
   &:hover {
     fill: #ffffff;
-    background: #2196f3;
+    background: $blue-accent;
 
     cursor: pointer;
   }
 
   &:focus {
     fill: #ffffff;
-    background: #2196f3;
+    background: $blue-accent;
     border-radius: 50%;
   }
 }

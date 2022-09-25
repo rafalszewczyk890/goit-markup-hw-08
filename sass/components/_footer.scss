@@ -50,7 +50,7 @@
 
   &__header {
     text-transform: uppercase;
-    font-family: "Roboto";
+    font-family: $font-main;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -77,12 +77,12 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover {
-      background-color: #2196f3;
+      background-color: $blue-accent;
       cursor: pointer;
     }
 
     &:focus {
-      background-color: #2196f3;
+      background-color: $blue-accent;
     }
   }
 }
