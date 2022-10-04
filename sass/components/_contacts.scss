@@ -3,6 +3,7 @@
   display: flex;
   gap: 50px;
   margin-left: 371px;
+  display: none;
 
   &__item {
     font-weight: 500;
@@ -25,3 +26,31 @@
     }
   }
 }
+
+// .contacts {
+//   list-style: none;
+//   display: flex;
+//   gap: 50px;
+//   margin-left: 371px;
+
+//   &__item {
+//     font-weight: 500;
+//     font-size: 14px;
+//     line-height: 16px;
+//     letter-spacing: 0.02em;
+//     color: $grey-accent;
+//     text-decoration: none;
+//     transition-property: color;
+//     transition-duration: 250ms;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+//     &:hover {
+//       color: $blue-accent;
+//     }
+
+//     &:focus {
+//       color: $blue-accent;
+//       transition-property: color;
+//     }
+//   }
+// }
