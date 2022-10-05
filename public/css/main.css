@@ -675,6 +675,14 @@ a {
   display: -ms-flexbox;
   display: flex;
   gap: 8px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 15px 0 15px;
+}
+.portfolio .portfolio__item {
+  -ms-flex-preferred-size: calc((100% - 16px) / 3);
+      flex-basis: calc((100% - 16px) / 3);
+  display: block;
 }
 .portfolio__button {
   background: #f5f4fa;
@@ -693,6 +701,7 @@ a {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
 }
 .portfolio__button:hover {
   background-color: #2196f3;
