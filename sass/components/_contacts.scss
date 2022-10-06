@@ -1,6 +1,5 @@
 .contacts {
   list-style: none;
-  display: flex;
   gap: 50px;
   margin-left: 371px;
   display: none;
@@ -24,6 +23,34 @@
       color: $blue-accent;
       transition-property: color;
     }
+  }
+}
+
+.icon-envelope {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.icon-smartphone {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts {
+    display: flex;
+    margin-left: 0;
+    flex-direction: column;
+    gap: 10px;
+
+    &__item {
+      font-size: 12px;
+      line-height: 14px;
+      display: flex;
+    }
+  }
+  .icon-envelope {
+    margin-right: 8px;
   }
 }
 

@@ -22,7 +22,6 @@
 
 .navigation {
   list-style: none;
-  display: flex;
   gap: 46px;
   height: 80px;
   align-items: center;
@@ -47,6 +46,15 @@
       content: "";
       right: 0px;
     }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: flex;
+    gap: 60px;
+    margin-left: 83px;
+    margin-right: 94px;
   }
 }
 
