@@ -845,6 +845,21 @@ a {
   fill: currentColor;
 }
 
+.whatwedo__header,
+.team__header,
+.clients__header {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding-bottom: 30px;
+  color: #212121;
+}
+
 .backdrop {
   position: fixed;
   width: 100%;
@@ -1096,19 +1111,4 @@ a {
       align-self: center;
   margin-top: 30px;
   cursor: pointer;
-}
-
-.whatwedo__header,
-.team__header,
-.clients__header {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 33px;
-  /* identical to box height */
-  text-align: center;
-  letter-spacing: 0.03em;
-  padding-bottom: 30px;
-  color: #212121;
 }/*# sourceMappingURL=main.css.map */
