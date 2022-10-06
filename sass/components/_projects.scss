@@ -81,6 +81,12 @@
   padding-top: 0px;
 }
 
+@media screen and (min-width: 768px) {
+  .projects-card {
+    width: 354px;
+    height: 440px;
+  }
+}
 
 // .projects__list {
 //   list-style: none;

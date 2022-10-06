@@ -36,7 +36,6 @@
     margin-bottom: 10px;
   }
 
- 
   &__icons {
     text-align: center;
     margin-bottom: 10px;
@@ -69,7 +68,6 @@
   &:hover {
     fill: #ffffff;
     background: $blue-accent;
-
     cursor: pointer;
   }
 
@@ -77,6 +75,27 @@
     fill: #ffffff;
     background: $blue-accent;
     border-radius: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team {
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &__item {
+      flex-basis: calc((100% - 30px) / 2);
+    }
+
+    &__photo {
+      margin-bottom: 0;
+      max-height: 546px;
+      max-width: 354px;
+    }
+  }
+  .icon-team {
+    margin-bottom: 0;
   }
 }
 
