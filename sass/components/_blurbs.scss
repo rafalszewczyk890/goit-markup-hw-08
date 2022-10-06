@@ -1,6 +1,5 @@
 .blurbs-list {
   list-style: none;
-
   padding: 60px 15px;
   gap: 30px;
 
@@ -36,6 +35,21 @@
   margin-bottom: 30px;
   display: flex;
   padding: 25px 102px 25px 102px;
+}
+
+@media screen and (min-width: 768px) {
+  .icon-container {
+    width: 354px;
+  }
+
+  .blurbs-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .blurbs-list__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
 }
 
 // .blurbs-list {

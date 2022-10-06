@@ -276,6 +276,7 @@ a {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  font-size: 26px;
 }
 .cta__button {
   background: #2196f3;
@@ -298,6 +299,12 @@ a {
   background-color: #fff;
 }
 
+@media screen and (min-width: 768px) {
+  .cta__photo {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(83, 83, 83, 0.466)), to(rgba(68, 68, 68, 0.404))), url("../images/header-background-tablet.jpg");
+    background-image: linear-gradient(to bottom, rgba(83, 83, 83, 0.466), rgba(68, 68, 68, 0.404)), url("../images/header-background-tablet.jpg");
+  }
+}
 .blurbs-list {
   list-style: none;
   padding: 60px 15px;
@@ -344,6 +351,22 @@ a {
   padding: 25px 102px 25px 102px;
 }
 
+@media screen and (min-width: 768px) {
+  .icon-container {
+    width: 354px;
+  }
+  .blurbs-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .blurbs-list__item {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
 .whatwedo {
   display: none;
 }
