@@ -97,6 +97,22 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .footer {
+    &__flexbox {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    &__nav {
+      margin-left: 61px;
+    }
+  }
+  .join-us {
+    margin-right: 61px;
+  }
+}
+
 // .footer {
 //   background-color: #2f303a;
 //   padding: 60px 0;

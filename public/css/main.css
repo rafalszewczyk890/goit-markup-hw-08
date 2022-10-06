@@ -691,6 +691,25 @@ a {
   margin-right: 10px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer__flexbox {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer__nav {
+    margin-left: 61px;
+  }
+  .join-us {
+    margin-right: 61px;
+  }
+}
 .newsletter-form {
   display: -webkit-box;
   display: -ms-flexbox;
