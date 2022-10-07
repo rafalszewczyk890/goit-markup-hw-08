@@ -312,18 +312,17 @@ a {
           align-items: center;
   gap: 30px;
 }
+.cta__container {
+  max-width: 480px;
+  margin: 0 auto;
+  min-width: 350px;
+}
 .cta__photo {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(83, 83, 83, 0.466)), to(rgba(68, 68, 68, 0.404))), url("../images/header-background-mobile.jpg");
   background-image: linear-gradient(to bottom, rgba(83, 83, 83, 0.466), rgba(68, 68, 68, 0.404)), url("../images/header-background-mobile.jpg");
   background-size: cover;
   max-width: 1600px;
   margin: 0 auto;
-}
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .cta__photo {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(83, 83, 83, 0.466)), to(rgba(68, 68, 68, 0.404))), url("../images/header-background-mobile@2x.png");
-    background-image: linear-gradient(to bottom, rgba(83, 83, 83, 0.466), rgba(68, 68, 68, 0.404)), url("../images/header-background-mobile@2x.png");
-  }
 }
 .cta__text {
   font-family: "Roboto";
@@ -357,16 +356,66 @@ a {
   background-color: #fff;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .cta__photo {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(83, 83, 83, 0.466)), to(rgba(68, 68, 68, 0.404))), url("../images/header-background-tablet.jpg");
     background-image: linear-gradient(to bottom, rgba(83, 83, 83, 0.466), rgba(68, 68, 68, 0.404)), url("../images/header-background-tablet.jpg");
   }
+  .cta__container {
+    max-width: 768px;
+  }
 }
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) {
+  .cta__container {
+    max-width: 1600px;
+  }
+  .cta__flexbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 200px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 30px;
+  }
+  .cta__photo {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(83, 83, 83, 0.466)), to(rgba(68, 68, 68, 0.404))), url("../images/header-background.jpg");
+    background-image: linear-gradient(to bottom, rgba(83, 83, 83, 0.466), rgba(68, 68, 68, 0.404)), url("../images/header-background.jpg");
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+  .cta__text {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .cta__photo {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(83, 83, 83, 0.466)), to(rgba(68, 68, 68, 0.404))), url("../images/header-background-mobile@2x.png");
+    background-image: linear-gradient(to bottom, rgba(83, 83, 83, 0.466), rgba(68, 68, 68, 0.404)), url("../images/header-background-mobile@2x.png");
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .cta__photo {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(83, 83, 83, 0.466)), to(rgba(68, 68, 68, 0.404))), url("../images/header-background-tablet@2x.jpg");
     background-image: linear-gradient(to bottom, rgba(83, 83, 83, 0.466), rgba(68, 68, 68, 0.404)), url("../images/header-background-tablet@2x.jpg");
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .cta__photo {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(83, 83, 83, 0.466)), to(rgba(68, 68, 68, 0.404))), url("../images/header-background@2x.jpg");
+    background-image: linear-gradient(to bottom, rgba(83, 83, 83, 0.466), rgba(68, 68, 68, 0.404)), url("../images/header-background@2x.jpg");
   }
 }
 .blurbs-list {
