@@ -35,6 +35,16 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .client__list {
+    flex-wrap: nowrap;
+  }
+
+  .icon-client {
+    width: 170px;
+  }
+}
+
 // .clients {
 //   background-color: #ffffff;
 
