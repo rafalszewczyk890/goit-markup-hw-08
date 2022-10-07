@@ -77,6 +77,19 @@
   }
 }
 
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .cta__photo {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(83, 83, 83, 0.466),
+        rgba(68, 68, 68, 0.404)
+      ),
+      url("../images/header-background-tablet@2x.jpg");
+  }
+}
+
 // .cta {
 //   &__flexbox {
 //     display: flex;
