@@ -90,9 +90,6 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 @media screen and (min-width: 768px) {
@@ -968,8 +965,8 @@ a {
 
 @media screen and (min-width: 768px) {
   .projects-card {
-    width: 354px;
-    height: 440px;
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
   }
 }
 .whatwedo__header,
