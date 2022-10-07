@@ -8,9 +8,18 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .header {
     padding: 0 15px 0 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    padding: 0;
+    &-flexbox {
+      justify-content: space-between;
+    }
   }
 }
 
