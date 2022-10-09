@@ -388,6 +388,7 @@ a {
     background-image: linear-gradient(to bottom, rgba(83, 83, 83, 0.466), rgba(68, 68, 68, 0.404)), url("../images/header-background.jpg");
     max-width: 1600px;
     margin: 0 auto;
+    width: 100%;
   }
   .cta__text {
     font-weight: 900;
@@ -554,6 +555,9 @@ a {
   .whatwedo {
     display: block;
   }
+  .whatwedo__header {
+    margin-bottom: 20px;
+  }
 }
 .team {
   background: #f5f4fa;
@@ -691,6 +695,9 @@ a {
     height: auto;
     padding-bottom: 30px;
   }
+  .team__header {
+    margin-bottom: 20px;
+  }
 }
 .clients {
   background-color: #ffffff;
@@ -744,6 +751,9 @@ a {
   }
   .icon-client {
     width: 170px;
+  }
+  .clients__header {
+    margin-bottom: 20px;
   }
 }
 .footer {
@@ -1060,7 +1070,7 @@ a {
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  width: 358px;
+  max-width: 358px;
   height: 50px;
   background-color: transparent;
   padding: 15px;
@@ -1395,7 +1405,6 @@ a {
   font-weight: 700;
   font-size: 28px;
   line-height: 33px;
-  /* identical to box height */
   text-align: center;
   letter-spacing: 0.03em;
   padding-bottom: 30px;
@@ -1705,11 +1714,6 @@ a {
     display: none;
   }
 }
-.menu-toggle:hover,
-.menu-toggle:focus {
-  background-color: #2196f3;
-}
-
 .menu-container {
   position: fixed;
   top: 0;
@@ -1803,4 +1807,8 @@ a {
 }
 .mobile-social__link:last-child {
   border-right: none;
+}
+
+.menu-toggle:hover {
+  color: #2196f3;
 }/*# sourceMappingURL=main.css.map */

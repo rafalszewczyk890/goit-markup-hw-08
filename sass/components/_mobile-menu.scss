@@ -33,11 +33,6 @@
   }
 }
 
-.menu-toggle:hover,
-.menu-toggle:focus {
-  background-color: $blue-accent;
-}
-
 .menu-container {
   position: fixed;
   top: 0;
@@ -126,4 +121,8 @@
   &__link:last-child {
     border-right: none;
   }
+}
+
+.menu-toggle:hover {
+  color: $blue-accent;
 }
