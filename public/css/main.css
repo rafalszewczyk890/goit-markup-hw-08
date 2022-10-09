@@ -1436,7 +1436,7 @@ a {
 
 .modal-window {
   position: absolute;
-  width: 528px;
+  width: 450px;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -1540,7 +1540,7 @@ a {
   display: flex;
 }
 .modal-form__input {
-  width: 448px;
+  width: 370px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -1557,7 +1557,7 @@ a {
 }
 .modal-form__textarea {
   resize: none;
-  width: 448px;
+  width: 370px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -1653,4 +1653,16 @@ a {
       align-self: center;
   margin-top: 30px;
   cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-window {
+    width: 528px;
+  }
+  .modal-form__input {
+    width: 448px;
+  }
+  .modal-form__textarea {
+    width: 448px;
+  }
 }/*# sourceMappingURL=main.css.map */
