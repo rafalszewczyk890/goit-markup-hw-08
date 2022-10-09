@@ -521,7 +521,7 @@ a {
   background: rgba(47, 48, 58, 0.8);
   height: 70px;
   position: absolute;
-  bottom: 3px;
+  bottom: 0px;
   color: #ffffff;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1300,6 +1300,7 @@ a {
   .projects-card {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);
+    height: 424px;
   }
 }
 @media screen and (min-width: 1200px) {

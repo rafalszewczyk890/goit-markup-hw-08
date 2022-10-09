@@ -58,28 +58,6 @@
   }
 }
 
-// .navigation__text {
-//   transition-property: color;
-//   transition-duration: 250ms;
-//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-//   color: $dark-border;
-//   text-decoration: none;
-
-//   &--current {
-//     color: $blue-accent;
-//   }
-
-//   &:hover {
-//     color: $blue-accent;
-//     text-decoration: none;
-//   }
-
-//   &:focus {
-//     color: $blue-accent;
-//     text-decoration: none;
-//   }
-// }
-
 @media screen and (min-width: 1200px) {
   .navigation {
     list-style: none;
