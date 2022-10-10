@@ -61,6 +61,12 @@ a {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
     width: 768px;
@@ -1098,7 +1104,7 @@ a {
 
 @media screen and (min-width: 480px) and (max-width: 1199px) {
   .newsletter-form__input {
-    min-width: 100%;
+    max-width: 480px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1449,7 +1455,9 @@ a {
 
 .modal-window {
   position: absolute;
-  width: 450px;
+  max-width: 450px;
+  margin: 0 auto;
+  width: 100%;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -1461,6 +1469,17 @@ a {
   z-index: 40;
 }
 
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .modal-window {
+    max-width: 320px;
+  }
+  .form {
+    max-width: 320px;
+  }
+  .modal-form__input {
+    max-width: 270px;
+  }
+}
 .close-button {
   position: absolute;
   top: 8px;
@@ -1483,6 +1502,11 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 4px;
+  max-width: 450px;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .modal-icon {
@@ -1671,6 +1695,7 @@ a {
 @media screen and (min-width: 1200px) {
   .modal-window {
     width: 528px;
+    max-width: 528px;
   }
   .modal-form__input {
     width: 448px;
@@ -1744,8 +1769,8 @@ a {
 
 .menu-toggle {
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 10px;
+  right: 8px;
   color: #212121;
 }
 
@@ -1797,6 +1822,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   list-style: none;
   font-family: "Roboto";
   font-style: normal;

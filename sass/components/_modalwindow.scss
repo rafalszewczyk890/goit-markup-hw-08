@@ -23,16 +23,30 @@
 
 .modal-window {
   position: absolute;
-  width: 450px;
+  max-width: 450px;
+  margin: 0 auto;
+  width: 100%;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   z-index: 40;
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .modal-window {
+    max-width: 320px;
+  }
+  .form {
+    max-width: 320px;
+  }
+
+  .modal-form__input {
+    max-width: 270px;
+  }
 }
 
 .close-button {
@@ -52,6 +66,9 @@
   display: flex;
   flex-direction: column;
   gap: 4px;
+  max-width: 450px;
+  width: 100%;
+  align-items: center;
 }
 
 .modal-icon {
@@ -217,6 +234,7 @@
 @media screen and (min-width: 1200px) {
   .modal-window {
     width: 528px;
+    max-width: 528px;
   }
   .modal-form {
     &__input {
