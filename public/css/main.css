@@ -1104,7 +1104,7 @@ a {
 
 @media screen and (min-width: 480px) and (max-width: 1199px) {
   .newsletter-form__input {
-    max-width: 480px;
+    width: 480px;
   }
 }
 @media screen and (min-width: 1200px) {
