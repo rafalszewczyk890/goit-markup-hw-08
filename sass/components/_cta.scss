@@ -8,10 +8,9 @@
   }
 
   &__container {
-    max-width: 768px;
+    max-width: 480px;
     margin: 0 auto;
     min-width: 320px;
-    width: 100%;
   }
 
   &__photo {
@@ -22,11 +21,9 @@
       ),
       url("../images/header-background-mobile.jpg");
     background-size: cover;
-    max-width: 767px;
+    max-width: 1600px;
     margin: 0 auto;
-    width: 100%;
     background-position: center;
-    background-repeat: no-repeat;
   }
 
   &__text {
@@ -71,12 +68,9 @@
         rgba(68, 68, 68, 0.404)
       ),
       url("../images/header-background-tablet.jpg");
-    max-width: 1200px;
-    width: 100%;
   }
   .cta__container {
-    max-width: 1200px;
-    width: 100%;
+    max-width: 768px;
   }
 }
 
