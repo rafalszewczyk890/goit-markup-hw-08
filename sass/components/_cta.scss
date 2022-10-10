@@ -10,7 +10,7 @@
   &__container {
     max-width: 480px;
     margin: 0 auto;
-    min-width: 350px;
+    min-width: 320px;
   }
 
   &__photo {
@@ -23,6 +23,7 @@
     background-size: cover;
     max-width: 1600px;
     margin: 0 auto;
+    background-position: center;
   }
 
   &__text {

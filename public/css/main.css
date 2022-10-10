@@ -57,18 +57,19 @@ a {
 }
 
 .container {
-  max-width: 480px;
+  width: 320px;
   margin: 0 auto;
-  min-width: 350px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
+    width: 768px;
     max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
+    width: 1200px;
     max-width: 1200px;
     margin: 0 auto;
   }
@@ -315,7 +316,7 @@ a {
 .cta__container {
   max-width: 480px;
   margin: 0 auto;
-  min-width: 350px;
+  min-width: 320px;
 }
 .cta__photo {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(83, 83, 83, 0.466)), to(rgba(68, 68, 68, 0.404))), url("../images/header-background-mobile.jpg");
@@ -323,6 +324,7 @@ a {
   background-size: cover;
   max-width: 1600px;
   margin: 0 auto;
+  background-position: center;
 }
 .cta__text {
   font-family: "Roboto";
@@ -574,8 +576,7 @@ a {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  max-width: 450px;
-  height: 622px;
+  max-height: 622px;
   margin: 0 0 30px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -587,6 +588,9 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.team__item {
+  max-width: 450px;
 }
 .team__caption {
   font-size: 16px;
@@ -1090,7 +1094,6 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 480px;
 }
 
 @media screen and (min-width: 480px) and (max-width: 1199px) {
@@ -1730,11 +1733,13 @@ a {
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+  visibility: hidden;
 }
 
 .is-open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+  visibility: visible;
 }
 
 .menu-toggle {
