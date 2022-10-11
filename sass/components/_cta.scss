@@ -20,10 +20,10 @@
         rgba(68, 68, 68, 0.404)
       ),
       url("../images/header-background-mobile.jpg");
-    background-size: cover;
-    max-width: 1600px;
-    margin: 0 auto;
     background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
   }
 
   &__text {
@@ -68,6 +68,10 @@
         rgba(68, 68, 68, 0.404)
       ),
       url("../images/header-background-tablet.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
   }
   .cta__container {
     max-width: 768px;
@@ -94,9 +98,10 @@
           rgba(68, 68, 68, 0.404)
         ),
         url("../images/header-background.jpg");
-      max-width: 1600px;
-      margin: 0 auto;
+      background-position: center;
+      background-repeat: no-repeat;
       width: 100%;
+      background-size: cover;
     }
 
     &__text {

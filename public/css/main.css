@@ -57,26 +57,19 @@ a {
 }
 
 .container {
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .container {
-    width: 480px;
-    margin: 0 auto;
-  }
-}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
     width: 768px;
-    max-width: 768px;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    max-width: 1200px;
     margin: 0 auto;
   }
 }
@@ -327,10 +320,10 @@ a {
 .cta__photo {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(83, 83, 83, 0.466)), to(rgba(68, 68, 68, 0.404))), url("../images/header-background-mobile.jpg");
   background-image: linear-gradient(to bottom, rgba(83, 83, 83, 0.466), rgba(68, 68, 68, 0.404)), url("../images/header-background-mobile.jpg");
-  background-size: cover;
-  max-width: 1600px;
-  margin: 0 auto;
   background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
 }
 .cta__text {
   font-family: "Roboto";
@@ -368,6 +361,10 @@ a {
   .cta__photo {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(83, 83, 83, 0.466)), to(rgba(68, 68, 68, 0.404))), url("../images/header-background-tablet.jpg");
     background-image: linear-gradient(to bottom, rgba(83, 83, 83, 0.466), rgba(68, 68, 68, 0.404)), url("../images/header-background-tablet.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
   }
   .cta__container {
     max-width: 768px;
@@ -394,9 +391,10 @@ a {
   .cta__photo {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(83, 83, 83, 0.466)), to(rgba(68, 68, 68, 0.404))), url("../images/header-background.jpg");
     background-image: linear-gradient(to bottom, rgba(83, 83, 83, 0.466), rgba(68, 68, 68, 0.404)), url("../images/header-background.jpg");
-    max-width: 1600px;
-    margin: 0 auto;
+    background-position: center;
+    background-repeat: no-repeat;
     width: 100%;
+    background-size: cover;
   }
   .cta__text {
     font-weight: 900;
@@ -471,6 +469,10 @@ a {
   display: -ms-flexbox;
   display: flex;
   padding: 25px 102px 25px 102px;
+}
+
+.icon-lorem {
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
