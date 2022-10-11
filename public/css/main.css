@@ -1236,6 +1236,10 @@ a {
   padding: 0 15px 0 15px;
 }
 
+.projects-photo {
+  margin: 0 auto;
+}
+
 .projects-card {
   border: 1px solid #eeeeee;
   width: 370px;
